@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Curry function</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="h3">Curry functions</h1>
+      <p>
+        Curry function - це перетворення функції з безліччю аргументів в набір
+        вкладених одна в одну функцій з одним аргументом.
+      </p>
+      <p>
+        При викликі карірованної функції з передачею їй одного аргументу,вона
+        повертає нову функцію, яка очікує находження наступного аргументу
+      </p>
+      <h2 class="h4">Навіщо потрібні каріровані функції</h2>
+      <ul>
+        <li>
+          Функції можна разбивати на маленькі шматочки, які потім
+          перевикористовувати
+        </li>
+        <li>Код стає більш лаконічним, легко читається та легко тестується.</li>
+        <li>
+          Можна розширувати функції, додавати до них різні методи, та цім
+          методам додавати різноманітні можливості.
+        </li>
+        <li>
+          Код починає відповідати принципам SOLID<br />S -> single
+          responsibility<br />O -> open to extension closed to modification
+        </li>
+      </ul>
+
+      <a
+        href="https://blog.bitsrc.io/understanding-currying-in-javascript-ceb2188c339"
+        target="_blank"
+        >Докладніше</a
+      >
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ramda/0.27.0/ramda.min.js"
+      integrity="sha256-b9w9dH2wg4H3c1vaJkmkV7r8AxhRan6+41iRnFB6jck="
+      crossorigin="anonymous"
+    ></script>
+    <script src="curry.js"></script>
+  </body>
+</html>
